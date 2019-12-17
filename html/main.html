@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>test</title>
+</head>
+<body>
+	
+	<audio controls id="audio"></audio>
+
+    <p>Link:</p>
+	
+    <textarea id="input" rows="10" cols="30">Hotel California.mp3</textarea>
+    
+    
+	<button onclick="copyText()">UPDATE</button>
+ 
+</body>
+<script type="text/javascript">
+
+	function copyText() {
+	
+        var input = document.getElementById("input").value;;
+
+        audio.src = input;
+
+		audio.play();
+		
+		console.log(audio.src);
+		
+		console.log(input.toString());
+		
+    }
+
+</script>
+
+
+</html>
