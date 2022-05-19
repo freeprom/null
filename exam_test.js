@@ -392,8 +392,9 @@ var HEGU = [
 
 let counts=0;
 
-HEGU.forEach(function(aid){
-	console.log(aid);	
+console.log("test");
+
+HEGU.forEach(function(aid){	
 	let radio = document.querySelector("input[type=radio][value="+aid+"]");
 	if(radio == null){
 		radio = document.querySelector("input[type=checkbox][value="+aid+"]");
@@ -407,8 +408,7 @@ HEGU.forEach(function(aid){
 	}
 })
 
-NEIK.forEach(function(aid){
-	console.log(aid);	
+NEIK.forEach(function(aid){	
 	let radio = document.querySelector("input[type=radio][value="+aid+"]");
 	if(radio == null){
 		radio = document.querySelector("input[type=checkbox][value="+aid+"]");
