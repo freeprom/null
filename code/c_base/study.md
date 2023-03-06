@@ -1,6 +1,6 @@
 
 ```c
-#ifdef CONFIG_HISI_DEBUG_FS
+#ifdef DEBUG
 
 #include <linux/file.h>
 #include <linux/module.h>
@@ -861,6 +861,6 @@ module_exit(pci_slt_cleanup);
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("test slt");
 
-#endif /* CONFIG_HISI_DEBUG_FS */
+#endif /* DEBUG */
 
 ```
